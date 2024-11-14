@@ -1,0 +1,119 @@
+<mvc:View controllerName="zdemo.controller.EqpDetails"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:ndc="sap.ndc"
+	xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page id="pageEqp" title="{i18n>title}" titleAlignment="Center">
+       
+		<Table id="idProductsTable"
+		inset="false"
+		items="{oJmodel>/oEqpListDetails}">
+		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<Title text="Equipment Details" level="H2"/>
+					<ToolbarSpacer />
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<infoToolbar>
+			<OverflowToolbar>
+				<Label text=""/>
+			</OverflowToolbar>
+		</infoToolbar>
+		<columns  >
+			<Column
+				width="12em">
+				<Text text="Equipment ID" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Work Center" />
+			</Column>
+            <Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Functional Location" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="MaintenancePlan" />
+			</Column>
+			
+            
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Comments" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Next Callibration Date" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Released For Use" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Postponement status" />
+			</Column>
+			
+			
+		</columns>
+		<items>
+	<ColumnListItem vAlign="Middle" 
+			 class="{=${oJmodel>ReleasedUse} === 'N' ? : 'redBackground' : 'greenBackground'}">
+			 <customData>
+
+			<core:CustomData key="mydata" value="{oJmodel>ReleasedUse}" writeToDom="true">
+			</core:CustomData>
+
+			</customData>
+				<cells>
+					<ObjectIdentifier
+						title="{oJmodel>Equnr}"
+						text="{oJmodel>Eqktx}"/>
+					<Text
+						text="{oJmodel>Arbpl}" />
+                    <ObjectIdentifier
+						title="{oJmodel>Tplnr}"
+						text="{oJmodel>Pltxt}"/>
+					<ObjectIdentifier
+						title="{oJmodel>Warpl}"
+						text="{oJmodel>Wptxt}"/> 
+					<Text
+						text="{oJmodel>RelComments}" />
+                    <Text
+                       
+                        text = "{
+                        path: 'oJmodel>NextDate',
+                        type: 'sap.ui.model.type.Date',
+                        formatOptions: {
+                          pattern: 'dd.MM.yyyy'
+                        }
+                      }" />
+
+					<Text
+						text="{oJmodel>ReleasedUse}" />
+					<Text
+						text="{oJmodel>Status}" />
+					
+				
+				</cells>
+			</ColumnListItem>
+		</items>
+	    </Table>
+		
+    </Page>
+</mvc:View>
