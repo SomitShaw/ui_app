@@ -38,7 +38,7 @@
       "tablet@2": ""
     },
     "deviceTypes": {
-      "desktop": true,
+      "desktop": false,
       "tablet": true,
       "phone": true
     }
@@ -150,3 +150,4 @@
     "service": "zdemo"
   }
 }
+
