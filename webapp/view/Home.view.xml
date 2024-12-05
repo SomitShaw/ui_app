@@ -19,7 +19,7 @@
 				<Input id="inputFuncLoc" type="Text" width="20rem"/>
 				<ndc:BarcodeScannerButton id="sampleBarcodeScannerButtonZebraOne" scanSuccess="onScanSuccessFL" scanFail="onScanErrorFL" inputLiveUpdate="onScanLiveUpdate" dialogTitle="Barcode Scanner" keepCameraScan="{/keepCameraScanOne}" class="sampleBarcodeScannerButtonWithZebraEB"/>
 			</HBox>
-        <Button text="Search" type="Emphasized" press="fnOnSubmitFL"/>
+        <!-- <Button text="Search" type="Emphasized" press="fnOnSubmitFL"/> -->
 			</FlexBox>
 		<FlexBox visible="{oJmodel>/EiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
 		        <Title text="Scan or enter Equipment ID:"/>
@@ -29,11 +29,23 @@
 				<Input id="inputEqpId" type="Text" width="20rem"/>
 				<ndc:BarcodeScannerButton id="sampleBarcodeScannerButtonZebra" scanSuccess="onScanSuccessEI" scanFail="onScanErrorEI" inputLiveUpdate="onScanLiveUpdate" dialogTitle="Barcode Scanner " keepCameraScan="{/keepCameraScanOne}" class="sampleBarcodeScannerButtonWithZebraEB"/>
 			</HBox>
-        <Button text="Search" type="Emphasized" press="fnOnSubmitEQ"/>
+        <!-- <Button text="Search" type="Emphasized" press="fnOnSubmitEQ"/> -->
 			</FlexBox>
       <FlexBox visible="{oJmodel>/fiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
 				<MessageStrip text="{i18n>wildCardMsg}" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom">
 			</MessageStrip>
 			</FlexBox>
+		<FlexBox  visible="{oJmodel>/fiVis}"
+                renderType="Div"
+                alignItems="Inherit"
+                justifyContent="Center">
+            <Button text="Search" type="Emphasized" press="fnOnSubmitFL" width="18rem"/>
+            </FlexBox>
+                <FlexBox  visible="{oJmodel>/EiVis}"
+                renderType="Div"
+                alignItems="Inherit"
+                justifyContent="Center">
+            <Button text="Search" type="Emphasized" press="fnOnSubmitFL" width="18rem"/>
+            </FlexBox>	
     </Page>
 </mvc:View>
