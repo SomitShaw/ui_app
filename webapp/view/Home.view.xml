@@ -45,7 +45,7 @@
                 renderType="Div"
                 alignItems="Inherit"
                 justifyContent="Center">
-            <Button text="Search" type="Emphasized" press="fnOnSubmitFL" width="18rem"/>
+            <Button text="Search" type="Emphasized" press="fnOnSubmitEQ" width="18rem"/>
             </FlexBox>	
     </Page>
 </mvc:View>
