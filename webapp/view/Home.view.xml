@@ -1,7 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:ndc="sap.ndc" xmlns="sap.m" controllerName="zdemo.controller.Home" displayBlock="true">
-    <Page id="page" title="Digital Calibration" titleAlignment="Center">
+    <Page id="page" title="Digital Calibration Status" titleAlignment="Center">
         <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center">
-				<Title text="Retrive status via:"/>
+				<Title text="Retrieve status via:"/>
         </FlexBox>
         <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center">
 					<SegmentedButton selectedKey="FI" id="SB1" selectionChange="onSelectionChange">
