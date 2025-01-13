@@ -33,3 +33,6 @@ sap.ui.define([
         });
     }
 );
+
+var messageLanguage = "en"
+sap.ui.getCore().getConfiguration().setLanguage(messageLanguage);
