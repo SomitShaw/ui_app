@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:ndc="sap.ndc" xmlns="sap.m" controllerName="zdemo.controller.Home" displayBlock="true">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:ndc="sap.ndc" xmlns="sap.m" controllerName="zcalib.controller.Home" displayBlock="true">
     <Page id="page" title="Digital Calibration Status" titleAlignment="Center">
         <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center">
 				<Title text="Retrieve status via:"/>

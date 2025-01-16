@@ -4,7 +4,7 @@ sap.ui.define([
 function (Controller) {
     "use strict";
 
-    return Controller.extend("zdemo.controller.BaseController", {
+    return Controller.extend("zcalib.controller.BaseController", {
         getModel : function(sModelName) {
             return this.getOwnerComponent().getModel(sModelName);
         },

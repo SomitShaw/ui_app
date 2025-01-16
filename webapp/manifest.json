@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "zdemo",
+    "id": "zcalib",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "zdemo.i18n.i18n"
+          "bundleName": "zcalib.i18n.i18n"
         }
       },
       "mainService": {
@@ -86,7 +86,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "zdemo.view",
+        "viewPath": "zcalib.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -139,7 +139,7 @@
       }
     },
     "rootView": {
-      "viewName": "zdemo.view.App",
+      "viewName": "zcalib.view.App",
       "type": "XML",
       "async": true,
       "id": "app"
@@ -147,7 +147,7 @@
   },
   "sap.cloud": {
     "public": true,
-    "service": "zdemo"
+    "service": "zcalib"
   }
 }
 

@@ -5,7 +5,7 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("zdemo.controller.App", {
+      return BaseController.extend("zcalib.controller.App", {
         onInit: function() {
         }
       });

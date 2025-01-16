@@ -1,6 +1,6 @@
 sap.ui.define([
    
-    "zdemo/controller/BaseController",
+    "zcalib/controller/BaseController",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
     'sap/ui/core/ElementRegistry',

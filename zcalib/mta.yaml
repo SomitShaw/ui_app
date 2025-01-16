@@ -1,15 +1,15 @@
 _schema-version: "3.2"
-ID: zdemo
+ID: zcalib
 description: Calibration App
 version: 0.0.1
 modules:
-- name: zdemo-router
+- name: zcalib-router
   type: approuter.nodejs
   path: router
   requires:
-  - name: zdemo-html5-repo-runtime
-  - name: zdemo-uaa
-  - name: zdemo-destination-service
+  - name: zcalib-html5-repo-runtime
+  - name: zcalib-uaa
+  - name: zcalib-destination-service
     group: destinations
     properties:
       forwardAuthToken: false
@@ -19,20 +19,20 @@ modules:
     disk-quota: 256M
     memory: 256M
 resources:
-- name: zdemo-uaa
+- name: zcalib-uaa
   type: org.cloudfoundry.managed-service
   parameters:
     config:
       tenant-mode: dedicated
-      xsappname: zdemo-${space-guid}
+      xsappname: zcalib-${space-guid}
     service: xsuaa
     service-plan: application
-- name: zdemo-html5-repo-runtime
+- name: zcalib-html5-repo-runtime
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
     service-plan: app-runtime
-- name: zdemo-destination-service
+- name: zcalib-destination-service
   type: org.cloudfoundry.managed-service
   parameters:
     config:
@@ -48,7 +48,7 @@ resources:
           existing_destinations_policy: update
       version: 1.0.0
     service: destination
-    service-name: zdemo-destination-service
+    service-name: zcalib-destination-service
     service-plan: lite
 parameters:
   deploy_mode: html5-repo

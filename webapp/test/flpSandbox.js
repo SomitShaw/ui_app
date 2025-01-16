@@ -40,7 +40,7 @@ sap.ui.define([
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
 									"title": "App Title",
-									"targetURL": "#zdemo-display"
+									"targetURL": "#zcalib-display"
 								}
 							}]
 						}]
@@ -51,8 +51,8 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"zdemo-display": {
-								"semanticObject": "zdemo",
+							"zcalib-display": {
+								"semanticObject": "zcalib",
 								"action": "display",
 								"description": "An SAP Fiori application.",
 								"title": "App Title",
@@ -61,8 +61,8 @@ sap.ui.define([
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=zdemo",
-									"url": sap.ui.require.toUrl("zdemo")
+									"additionalInformation": "SAPUI5.Component=zcalib",
+									"url": sap.ui.require.toUrl("zcalib")
 								}
 							}
 						}

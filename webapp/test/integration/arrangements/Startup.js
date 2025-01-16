@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "zdemo",
+					name: "zcalib",
 					async: true
 				},
 				hash: oOptions.hash,

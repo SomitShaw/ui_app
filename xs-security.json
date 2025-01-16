@@ -1,5 +1,5 @@
 {
-  "xsappname": "zdemo",
+  "xsappname": "zcalib",
   "tenant-mode": "dedicated",
   "description": "Security profile of called application",
   "scopes": [],

@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"zdemo/controller/Home.controller"
+	"zcalib/controller/Home.controller"
 ], function (Controller) {
 	"use strict";
 

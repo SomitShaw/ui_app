@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"zdemo/test/unit/AllTests"
+		"zcalib/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

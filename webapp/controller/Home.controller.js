@@ -1,6 +1,6 @@
 sap.ui.define([
    
-    "zdemo/controller/BaseController",
+    "zcalib/controller/BaseController",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
     "sap/m/MessageBox",
@@ -10,7 +10,7 @@ sap.ui.define([
 function (BaseController,Filter,FilterOperator,MessageBox,MessageToast) {
     "use strict";
 
-    return BaseController.extend("zdemo.controller.Home", {
+    return BaseController.extend("zcalib.controller.Home", {
         onInit: function () {
             this.oDataModel = this.getModel("mainService");
             this.oJmodel = this.getModel("oJmodel");

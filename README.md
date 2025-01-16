@@ -8,7 +8,7 @@
 |**Template Used**<br>simple|
 |**Service Type**<br>SAP System (ABAP On Premise)|
 |**Service URL**<br>http://sap-m1b:1000/sap/opu/odata/sap/ZGW_PA_DIGITAL_CALIBRATION_SRV|
-|**Module Name**<br>zdemo|
+|**Module Name**<br>zcalib|
 |**Application Title**<br>App Title|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_fiori_3|
@@ -17,7 +17,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## zdemo
+## zcalib
 
 An SAP Fiori application.
 

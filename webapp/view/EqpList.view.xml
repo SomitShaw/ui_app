@@ -1,4 +1,4 @@
-<mvc:View controllerName="zdemo.controller.EqpList"
+<mvc:View controllerName="zcalib.controller.EqpList"
     xmlns:mvc="sap.ui.core.mvc" 
     xmlns:ndc="sap.ndc"
     displayBlock="true"

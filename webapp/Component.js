@@ -5,12 +5,12 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "zdemo/model/models"
+        "zcalib/model/models"
     ],
     function (UIComponent, Device, models) {
         "use strict";
 
-        return UIComponent.extend("zdemo.Component", {
+        return UIComponent.extend("zcalib.Component", {
             metadata: {
                 manifest: "json"
             },
@@ -29,10 +29,12 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+
+                var messageLanguage = "en"
+                sap.ui.getCore().getConfiguration().setLanguage(messageLanguage);
+
             }
         });
     }
 );
 
-var messageLanguage = "en"
-sap.ui.getCore().getConfiguration().setLanguage(messageLanguage);

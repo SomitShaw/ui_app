@@ -1,5 +1,5 @@
 sap.ui.define([
-	"zdemo/test/unit/controller/Home.controller"
+	"zcalib/test/unit/controller/Home.controller"
 ], function () {
 	"use strict";
 });
