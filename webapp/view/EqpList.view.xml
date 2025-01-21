@@ -43,7 +43,7 @@
 				minScreenWidth="Desktop"
 				demandPopin="true"
 				hAlign="End">
-				<Text text="Next Callibration Date" />
+				<Text text="Next Calibration Date" />
 			</Column>
 			<Column
 				minScreenWidth="Desktop"

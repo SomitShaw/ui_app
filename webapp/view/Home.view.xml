@@ -16,7 +16,7 @@
 	    </FlexBox>
         <FlexBox visible="{oJmodel>/fiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
 				<HBox>
-				<Input id="inputFuncLoc" type="Text" width="20rem"/>
+				<Input id="inputFuncLoc" type="Text" width="20rem" fieldWidth="70%"/>
 				<ndc:BarcodeScannerButton id="sampleBarcodeScannerButtonZebraOne" scanSuccess="onScanSuccessFL" scanFail="onScanErrorFL" inputLiveUpdate="onScanLiveUpdate" dialogTitle="Barcode Scanner" keepCameraScan="{/keepCameraScanOne}" class="sampleBarcodeScannerButtonWithZebraEB"/>
 			</HBox>
         <!-- <Button text="Search" type="Emphasized" press="fnOnSubmitFL"/> -->
@@ -26,7 +26,7 @@
 	    </FlexBox>
       <FlexBox visible="{oJmodel>/EiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
 				<HBox>
-				<Input id="inputEqpId" type="Text" width="20rem"/>
+				<Input id="inputEqpId" type="Text" width="20rem" fieldWidth="70%"/>
 				<ndc:BarcodeScannerButton id="sampleBarcodeScannerButtonZebra" scanSuccess="onScanSuccessEI" scanFail="onScanErrorEI" inputLiveUpdate="onScanLiveUpdate" dialogTitle="Barcode Scanner " keepCameraScan="{/keepCameraScanOne}" class="sampleBarcodeScannerButtonWithZebraEB"/>
 			</HBox>
         <!-- <Button text="Search" type="Emphasized" press="fnOnSubmitEQ"/> -->
@@ -35,17 +35,12 @@
 				<MessageStrip text="{i18n>wildCardMsg}" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom">
 			</MessageStrip>
 			</FlexBox>
-		<FlexBox  visible="{oJmodel>/fiVis}"
-                renderType="Div"
-                alignItems="Inherit"
-                justifyContent="Center">
+		<FlexBox visible="{oJmodel>/fiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
             <Button text="Search" type="Emphasized" press="fnOnSubmitFL" width="18rem"/>
             </FlexBox>
-                <FlexBox  visible="{oJmodel>/EiVis}"
-                renderType="Div"
-                alignItems="Inherit"
-                justifyContent="Center">
-            <Button text="Search" type="Emphasized" press="fnOnSubmitEQ" width="18rem"/>
+                <FlexBox visible="{oJmodel>/EiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
+            <items><Button xmlns="sap.m" text="Search" type="Emphasized" press="fnOnSubmitEQ" width="18rem"/>
+            </items>
             </FlexBox>	
     </Page>
 </mvc:View>
