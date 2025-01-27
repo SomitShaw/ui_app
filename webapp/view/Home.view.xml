@@ -1,6 +1,6 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:ndc="sap.ndc" xmlns="sap.m" controllerName="zcalib.controller.Home" displayBlock="true">
     <Page id="page" title="Digital Calibration Status" titleAlignment="Center">
-        <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center">
+        <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center" class="sapUiMediumMarginTop">
 				<Title text="Retrieve status via:"/>
         </FlexBox>
         <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center">
@@ -16,7 +16,7 @@
 	    </FlexBox>
         <FlexBox visible="{oJmodel>/fiVis}" renderType="Div" alignItems="Inherit" justifyContent="Center">
 				<HBox>
-				<Input id="inputFuncLoc" type="Text" width="20rem" fieldWidth="70%"/>
+				<Input id="inputFuncLoc" type="Text" width="20rem" fieldWidth="70%" />
 				<ndc:BarcodeScannerButton id="sampleBarcodeScannerButtonZebraOne" scanSuccess="onScanSuccessFL" scanFail="onScanErrorFL" inputLiveUpdate="onScanLiveUpdate" dialogTitle="Barcode Scanner" keepCameraScan="{/keepCameraScanOne}" class="sampleBarcodeScannerButtonWithZebraEB"/>
 			</HBox>
         <!-- <Button text="Search" type="Emphasized" press="fnOnSubmitFL"/> -->
