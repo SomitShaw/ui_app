@@ -29,6 +29,13 @@
 	background: #7cdf5f !important;
 	}
 	
-	
+	/* Custom style for the Input control 
+.customInputStyle .sapMInputBaseInner {
+    font-size: 1.5rem; Adjusts the font size
+    height: 3.5rem;    Adjusts the height
+    line-height: 2.5rem;  Aligns text vertically 
 
 
+
+}
+	*/

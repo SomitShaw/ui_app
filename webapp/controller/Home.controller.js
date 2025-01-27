@@ -7,6 +7,7 @@ sap.ui.define([
     "sap/m/MessageToast"
     
 ],
+
 function (BaseController,Filter,FilterOperator,MessageBox,MessageToast) {
     "use strict";
 
@@ -18,6 +19,18 @@ function (BaseController,Filter,FilterOperator,MessageBox,MessageToast) {
             this.oJmodel.setProperty("/fiVis",true);
             this.oJmodel.setProperty("/EiVis",false);
         },
+        onNavBack: function () {
+            var oHistory = sap.ui.core.routing.History.getInstance();
+            var sPreviousHash = oHistory.getPreviousHash();
+        
+            if (sPreviousHash !== undefined) {
+                window.history.go(-1); // Navigate to the previous page in browser history
+            } else {
+                var oRouter = this.getRouter();
+                oRouter.navTo("previousRouteName", {}, true); // Navigate to a specific route
+            }
+        },    
+
         onSelectionChange: function (oEvent) {
 			var selKey = oEvent.getParameter("item").getKey() ;
             if(selKey === "FI"){

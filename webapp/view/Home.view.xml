@@ -1,5 +1,5 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:ndc="sap.ndc" xmlns="sap.m" controllerName="zcalib.controller.Home" displayBlock="true">
-    <Page id="page" title="Digital Calibration Status" titleAlignment="Center">
+    <Page id="page" title="Digital Calibration Status" titleAlignment="Center" navButtonPress="onNavBack" showNavButton="true">
         <FlexBox renderType="Div" alignItems="Inherit" justifyContent="Center" class="sapUiMediumMarginTop">
 				<Title text="Retrieve status via:"/>
         </FlexBox>
